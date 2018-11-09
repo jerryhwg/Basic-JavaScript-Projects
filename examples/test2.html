@@ -4,12 +4,14 @@ function getInvoice() {
     var runningTotal = 0;
     var sizeTotal = 0;
     var sizeArray = document.getElemensByClassName("size");
+    
     for (var i = 0; i < sizeArray.length; i ++) {
         if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
             text 1 = text1+selectedSize;
         }
     }
+    
     if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
         text2 = text2+sizeTotal;
@@ -20,6 +22,7 @@ function getInvoice() {
         sizeTotal = 14;
         text2 = text2+sizeTotal;
     }
+    
     runningTotal = sizeTotal;
     getMeat(runningTotal,text1,text2);
 }
@@ -56,4 +59,5 @@ function getMeat(runningTotal,text1,text2) {
             meatCount = meatCount -1;
         }
     }
+    getVeggie(runningTotal,text1,text2);
 };
