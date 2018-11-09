@@ -1,0 +1,23 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    <!-- jQuery source. jQuery runtime library provides what browser built-in does not provide. --> 
+</head>
+
+<p>Menu Items:</p>
+<ul class="menu">
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+</ul>
+
+<button>Click Me!</button>
+
+<script>
+
+    $(document).ready(function(){   // access DOM (document) and when it is ready, run a function code.
+        $("button").click(function(){   // 'button' tag - access it. Click = event to trigger another function. function = lambda.
+            $(".menu").slideToggle("slow"); // class 'menu' = target. slideToggle = toggle effect
+        }); // 
+    });
+    // $() syntax to declar a jQuery object. Use available jQuery library (ready, click, slideToggle). $ can be replaced by 'jQuery' syntax.
+
+</script>

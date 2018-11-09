@@ -1,0 +1,27 @@
+<h1 id="total">0.00</h1>
+Number1: <input type="text" name="txt1">
+Number2: <input type="text" name="txt2">
+
+<input type="radio" name="calc" value="*"> * </input>
+<input type="radio" name="calc" value="/"> / </input>
+
+<button type="button" onclick="Calc();"></button>
+<button type="button" onclick="Clear();"></button>
+
+<script>
+
+    function Calc() {
+        var result = document.querySelector('input[name="calc"]:checked').value;
+        var num1 = parseInt(txt1.value);
+        var num2 = parseInt(txt2.value);
+        if (result == "*") {
+            total.innerHTML = (num1 * num2).toFixed(2);
+        } else if (result == "/" ) 
+            total.innerHTML = (num1 / num2).toFixed(2);
+    };
+
+    function Clear() {
+        txt1.value=""; txt.value=""; total.innerHTML="0.00";
+    };
+
+</script>

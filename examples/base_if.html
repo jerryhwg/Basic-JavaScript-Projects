@@ -1,0 +1,35 @@
+<h1 id="total">0.00</h1>
+Number1: <input type="text" id="txt1">
+Number2: <input type="text" id="txt2">
+
+<input type="radio" name="calc" value="*" checked> * </input>
+<input type="radio" name="calc" value="/"> / </input>
+<input type="radio" name="calc" value="+"> + </input>
+<input type="radio" name="calc" value="-"> - </input>
+
+<button type="button" onclick="Calc();">Cacluate</button>
+<button type="button" onclick="Clear();">Clear</button>
+
+<script>
+
+    function Calc() {
+        var result = document.querySelector('input[name="calc"]:checked').value;
+        var num1 = parseInt(txt1.value); console.log(typeof num1); console.log(isNaN(num1));
+        var num2 = parseInt(txt2.value); console.log(typeof num2); console.log(isNa(num2));
+
+        if (result == "*") {
+            total.innerHTML = (num1 * num2).toFixed(2);
+        } else if (result == "/") {
+            total.innerHTML = (num1 / num2).toFixed(2);
+        } else if (result == "+") {
+            total.innerHTML = (num1 + num2).toFixed(2);
+        } else if (result == "-") {
+            total.innerHTML = (num1 - num2).toFixed(2);
+        };
+    };
+
+    function Clear() {
+        txt1.value=""; txt2.value=""; total.innerHTML="0.00";
+    };
+
+</script>

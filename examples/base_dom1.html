@@ -1,0 +1,12 @@
+<p>Type in first name:</p><br>
+<input type="text" value="" id="fname"><br><br>
+<p id="showText"></p><br><br>
+<input type="submit" value="See Name" onclick="myFunction()">
+
+<script>
+    function myFunciton() {
+        var name = document.getElementById('fname').value;
+        var show = document.getElementById("showText")
+        show.innerHTML = name;
+    }
+</script>
