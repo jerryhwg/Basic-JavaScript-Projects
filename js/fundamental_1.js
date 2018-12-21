@@ -31,5 +31,14 @@ var john = { // object & properties
     }
 }
 
+function calcAverage(tips) {
+    var sum = 0;
+    for (var i = 0; i < tips.length; i++) {
+        sum = sum + tips[i];
+    }
+    return sum / tips.length;
+}
+
 john.calcTips(); // object & function(method)
+john.average = calcAverage(john.tips);
 console.log(john); // list of john's properties
