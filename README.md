@@ -1,5 +1,9 @@
 # Basic-JavaScript-Projects
 
+## Project Pizza Order Site
+
+Pizza order site using javascript
+
 ## How to run java script
 
 Option 1:  
