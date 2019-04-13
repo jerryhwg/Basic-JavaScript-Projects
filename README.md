@@ -1,4 +1,4 @@
-# Basic-JavaScript-Projects
+# JavaScript-Codings
 
 ## Project Pizza Order Site
 
