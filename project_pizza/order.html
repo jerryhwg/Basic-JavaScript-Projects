@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/custom_style.css">
+
+    <title>Delicious Pizza Order</title>
+
+  </head>
+  <body>
+    <!--page content-->
+    <form id="menu">
+    <div id="main">
+        <div class="container">
+            <div class="text-center">   
+                <span class="head-main">Delcious Pizza Order Here!</span>
+            </div>
+        <!--order content-->
+        <div class="card-deck">
+        <div class="card text-white bg-primary mb-5" style="max-width: 25rem;">
+            <div class="card-header">
+                <h3 style="font-family:Georgia">Size</h3>
+            </div>
+            <div class="card-body">
+                <input class="size" type="radio" name="Size" value="Personal Pizza"> 
+                    <span>Personal Pizza</span><br>
+                <input class="size" type="radio" name="Size" value="Medium Pizza">
+                    <span>Medium Pizza</span><br>
+                <input class="size" type="radio" name="Size" value="Large Pizza">
+                    <span>Large Pizza</span><br>
+                <input class="size" type="radio" name="Size" value="Extra Large Pizza"> 
+                    <span>Extra Large Pizza</span><br>
+            </div>
+        </div>
+        <div class="card text-white bg-danger mb-5" style="max-width: 25rem;">
+            <div class="card-header">
+                <h3 style="font-family:Georgia">Meats</h3>
+            </div>
+            <div class="card-body">
+                <input class="meats" type="checkbox" name="Meats" value="Sausage"> 
+                    <span>Sausage</span><br>
+                <input class="meats" type="checkbox" name="Meats" value="Canadian Bacon">
+                    <span>Canadian Bacon</span><br>
+                <input class="meats" type="checkbox" name="Meats" value="Ground Beef">
+                    <span>Ground Beef</span><br>
+                <input class="meats" type="checkbox" name="Meats" value="Anchovy"> 
+                    <span>Anchovy</span><br>
+                <input class="meats" type="checkbox" name="Meats" value="Chicken"> 
+                    <span>Chicken</span><br>
+            </div>
+        </div>
+        <div class="card text-white bg-success mb-5" style="max-width: 25rem;">
+            <div class="card-header">
+                <h3 style="font-family:Georgia">Veggies</h3>
+            </div>
+            <div class="card-body">
+                <input class="veggies" type="checkbox" name="Veggies" value="Tomatoes"> 
+                    <span>Tomatoes</span><br>
+                <input class="veggies" type="checkbox" name="Veggies" value="Onions"> 
+                    <span>Onions</span><br>
+                <input class="veggies" type="checkbox" name="Veggies" value="Green Peppers">
+                    <span>Green Peppers</span><br>
+                <input class="veggies" type="checkbox" name="Veggies" value="Mushrooms">
+                    <span>Mushrooms</span><br>
+                <input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> 
+                    <span>Pineapple</span><br>
+                <input class="veggies" type="checkbox" name="Veggies" value="Spinach">
+                    <span>Spinach</span><br>
+                <input class="veggies" type="checkbox" name="Veggies" value="Jalapeno"> 
+                    <span>Jalapeno</span><br>
+            </div>
+        </div>
+        </div>
+        <div class="card-deck">
+        <div class="card text-white bg-info mb-5" style="max-width: 25rem;">
+            <div class="card-header">
+                <h3 style="font-family:Georgia">Crust</h3>
+            </div>
+            <div class="card-body">
+                <input class="crust" type="radio" name="Crust" value="Plain Crust"> 
+                    <span>Plain Crust</span><br>
+                <input class="crust" type="radio" name="Crust" value="Garlic Butter Crust">
+                    <span>Garlic Butter Crust</span><br>
+                <input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust">
+                    <span>Cheese Stuffed Crust</span><br>
+                <input class="crust" type="radio" name="Crust" value="Spicy Crust"> 
+                    <span>Spicy Crust</span><br>
+                <input class="crust" type="radio" name="Crust" value="House Special Crust"> 
+                    <span>House Special Crust</span><br>
+            </div>
+        </div>
+        <div class="card text-white bg-dark mb-5" style="max-width: 25rem;">
+            <div class="card-header">
+                <h3 style="font-family:Georgia">Sauce</h3>
+            </div>
+            <div class="card-body">
+                <input class="sauce" type="radio" name="Sauce" value="Marinara Sauce"> 
+                    <span>Marinara Sauce</span><br>
+                <input class="sauce" type="radio" name="Sauce" value="White Sauce">
+                    <span>White Sauce</span><br>
+                <input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce">
+                    <span>Barbeque Sauce</span><br>
+                <input class="sauce" type="radio" name="Sauce" value="No Sauce"> 
+                    <span>No Sauce</span><br>
+            </div>
+        </div>
+        <div class="card text-white bg-warning mb-5" style="max-width: 25rem;">
+            <div class="card-header">
+                <h3 style="font-family:Georgia">Cheese</h3>
+            </div>
+            <div class="card-body">
+                <input class="cheese" type="radio" name="Cheese" value="No Cheese"> 
+                    <span>No Cheese</span><br>
+                <input class="cheese" type="radio" name="Cheese" value="Extra Cheese">
+                    <span>Extra Cheese</span><br>
+            </div>
+        </div>
+        </div>
+        </form>
+        <!--/order content-->
+
+        <!--order button content-->
+
+        <div style="text-align: center">
+            <button type="button" onclick="getInvoice()" class="btn btn-primary btn-lg py-2" style="font-size: 2rem; font-family:robotic">Place Order</button>
+            &nbsp;&nbsp;
+            <button type="button" onclick="Clear()" class="btn btn-secondary btn-lg py-2" style="font-size: 2rem; font-family:robotic">Cancel</button>
+        </div>
+        <!--/order button content-->
+
+        <!--invoice content-->
+        <div class="container">
+            <div id="cart" class="container my-5" id="invoice">
+                <div class="row" id="Title" style="background-color: rgb(17, 125, 212); text-align: center">
+                    <div class="col-sm">
+                    <h3>Your Orders</h3>
+                    </div>
+                </div>
+                <div class="row" style="background-color: white; color: black; text-align: left">
+                    <div id="showText1" class="col-sm"></div>
+                    <div id="showText2" class="col-sm"></div>
+                </div>
+                <div class="row" style="background-color: rgb(204, 49, 170); text-align: center">
+                    <div id="Total" class="col-sm"></div>
+                </div>
+            </div>
+        </div>
+        <!--/invoice content-->
+        
+        </div>
+    </div>
+        <!--/page content-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="./js/order.js"></script>
+
+  </body>  
+</html>
